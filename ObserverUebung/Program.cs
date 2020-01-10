@@ -18,9 +18,6 @@ namespace ObserverUebung
             Logger logger2 = new Logger("C:\\Users\\lschubert\\...\\report.txt");
             folderWatch.FileAddedListeners.Add(new FileAddedListener(logger1));
             folderWatch.FileAddedListeners.Add(new FileAddedListener(logger2));
-            FilePartyListener filePartyListener = new FilePartyListener();
-            folderWatch.FileAddedListeners.Add(filePartyListener);
-
 
             //Test des Programms.
             //Der "hinzugefügte" File wird auf der Konsole angegeben
