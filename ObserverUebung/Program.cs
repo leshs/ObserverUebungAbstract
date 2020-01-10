@@ -13,9 +13,9 @@ namespace ObserverUebung
 
         private void Run()
         {
-            FolderWatch folderWatch = new FolderWatch("C:\\Users\\lschubert\\Documents\\TestFolder");
+            FolderWatch folderWatch = new FolderWatch("C:\\Users\\...\\Documents\\TestFolder");
             Logger logger1 = new Logger(Console.Out);
-            Logger logger2 = new Logger("C:\\Users\\lschubert\\Documents\\report.txt");
+            Logger logger2 = new Logger("C:\\Users\\lschubert\\...\\report.txt");
             folderWatch.FileAddedListeners.Add(new FileAddedListener(logger1));
             folderWatch.FileAddedListeners.Add(new FileAddedListener(logger2));
             FilePartyListener filePartyListener = new FilePartyListener();
